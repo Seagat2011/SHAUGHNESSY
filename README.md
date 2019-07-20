@@ -4,13 +4,16 @@ Spinlan, the declarative programming language
 ## Example
 
 ```python 
+#!/usr/bin/spinlan
+
 import fn
 import DRECORD from fn
-import STOCK_PRICE from DRECORD 
+import STOCK_PRICE from DRECORD as dict{SYMBOL,STOCK_PRICE,VOLUME,CLOSE}
+print '''${STOCK_PRICE}'''
 
-def {
-  fn isa file 'records.csv'
-  DRECORD isa dict{SYMBOL,STOCK_PRICE,VOLUME,CLOSE} of str.split(',') from lines in fn.readlines()
+def __SCOPE__ {
+  file('r') as fn from 'records.csv'
+  DRECORD is str.split(',') of line from lines in fn.readlines()
   STOCK_PRICE isa str
 }
 
