@@ -1,7 +1,7 @@
 # SPINLAN
 Spinlan, the declarative programming language 
 
-## Usage
+## Example
 
 ```python 
 import fn
