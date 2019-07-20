@@ -3,6 +3,13 @@ Spinlan, the declarative programming language
 
 ## Example
 
+```code
+# records.csv
+'AAPL',202.59,'20.9M',16:29:59
+
+```
+
+
 ```python 
 #!/usr/bin/spinlan
 
