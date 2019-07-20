@@ -13,8 +13,8 @@ print '''${STOCK_PRICE}'''
 
 def __SCOPE__ {
   file('r') as fn from 'records.csv'
-  DRECORD is str.split(',') in line from lines in fn.readlines()
-  STOCK_PRICE isa str
+  DRECORD is str.split(',') from fn.readlines()
+  STOCK_PRICE is str
 }
 
 ```
