@@ -6,10 +6,8 @@ Spinlan, the declarative programming language
 ```python 
 #records_csv.h
 
-def __SCOPE__ {
-  fn as file('r');
-}
-#dict{SYMBOL,STOCK_PRICE,VOLUME,CLOSE} as DRECORD 
+#fn as file('r');
+#dict{SYMBOL,STOCK_PRICE,VOLUME,CLOSE} as DRECORD;
 'AAPL',180.59,'20.9M','2019-7-16T16:29:59'
 'AAPL',189.49,'19.6M','2019-7-17T16:29:59'
   .
@@ -31,10 +29,8 @@ print '''${DRECORD[0].STOCK_PRICE}'''
 ```python
 #data_csv.h
 
-def __SCOPE__ {
-  fn as file('r');
-}
-#MyGrades is sorted(reverse=True) in [self]
+#fn as file('r');
+#MyGrades is sorted(reverse=True) in [self];
 75.0
 80.5
 100.0
