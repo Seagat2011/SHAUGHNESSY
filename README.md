@@ -86,6 +86,8 @@ print '''${z}'''
 ```
 
 ```
+dict{SYMBOL,RANGE,AVGVOLUME,PERIOD} as y;
+x[0].SYMBOL as Y.SYMBOL;
 len(x)-1 as _000_;
 abs(x[0].PRICE-x[_000_].PRICE) as y.RANGE;
 x[len].VOLUME as y.AVGVOLUME;
