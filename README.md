@@ -51,8 +51,9 @@ def __SCOPE__ {
 ```
 
 ```python
-import fn
+#!/usr/bin/spinlan
 
+import fn
 from fn import MyGrades
 print '''My highest grade is $MyGrades[0]'''
 ```
