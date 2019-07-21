@@ -1,7 +1,7 @@
 # SPINLAN
 Spinlan, the declarative programming language 
 
-## Example
+## Example #1
 
 ```python 
 #records_csv.h
@@ -29,4 +29,29 @@ import fn
 from fn import DRECORD
 print '''${DRECORD.STOCK_PRICE[0]}'''
 
+```
+
+## Example #2
+
+```python
+#data_csv.h
+
+def __SCOPE__ {
+  fn as file('r');
+  MyUnsortedGrades is round(float,2) from fn.readlines(): 
+  MyGrades is sorted(reverse=True) from MyUnsortedGrades
+}
+75.0
+80.5
+100.0
+ .
+ .
+89.0
+```
+
+```python
+import fn
+
+from fn import MyGrades
+print '''$MyGrades[0]'''
 ```
