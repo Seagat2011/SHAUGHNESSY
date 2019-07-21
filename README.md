@@ -21,7 +21,6 @@ def __SCOPE__ {
 ```python  
 #!/usr/bin/spinlan
 
-import fn
 from fn import DRECORD
 print '''${DRECORD.STOCK_PRICE[0]}'''
 
@@ -47,7 +46,6 @@ def __SCOPE__ {
 ```python
 #!/usr/bin/spinlan
 
-import fn
 from fn import MyGrades
 print '''My highest grade is ${MyGrades[0]}'''
 ```
