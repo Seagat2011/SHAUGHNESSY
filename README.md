@@ -55,5 +55,5 @@ def __SCOPE__ {
 
 import fn
 from fn import MyGrades
-print '''My highest grade is $MyGrades[0]'''
+print '''My highest grade is ${MyGrades[0]}'''
 ```
