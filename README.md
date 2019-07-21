@@ -14,7 +14,6 @@ Spinlan is a general purpose declarative programming language
 'AAPL',202.99,'21.3M','2019-7-31T16:29:59'
 ```
 
-
 ```python  
 #!/usr/bin/spinlan
 
@@ -22,6 +21,8 @@ from records_csv import DRECORD
 print '''${DRECORD[0].STOCK_PRICE}'''
 
 ```
+
+Also 
 
 ```python  
 #!/usr/bin/spinlan
