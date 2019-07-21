@@ -49,7 +49,6 @@ print '''${DRECORD[0].STOCK_PRICE}'''
 ```python
 #!/usr/bin/spinlan
 
-import data_csv as fn
-from fn import MyGrades
+from data_csv import MyGrades
 print '''My highest grade is ${MyGrades[0]}'''
 ```
