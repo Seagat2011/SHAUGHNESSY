@@ -12,7 +12,7 @@ def __SCOPE__ {
     SYMBOL is str;
     STOCK_PRICE is float(2);
     VOLUME is str;
-    CLOSE is int;
+    CLOSE is str;
 }
 'AAPL',180.59,'20.9M','2019-7-16T16:29:59'
 'AAPL',189.49,'19.6M','2019-7-17T16:29:59'
