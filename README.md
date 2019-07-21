@@ -52,3 +52,42 @@ print '''${DRECORD[0].STOCK_PRICE}'''
 from data_csv import MyGrades
 print '''My highest grade is ${MyGrades[0]}'''
 ```
+
+Spinlan generates code which satisfies test-cases
+
+## Example 3
+
+```python
+#x_csv.h
+
+#dict{SYMBOL,PRICE,VOLUME,CLOSE} as x;
+'AAPL',180.59,'20.9M','2019-7-16T16:29:59'
+'AAPL',189.49,'19.6M','2019-7-17T16:29:59'
+  .
+  .
+'AAPL',202.99,'21.3M','2019-7-31T16:29:59'
+```
+
+```python
+#y_csv.h
+
+#dict{SYMBOL,RANGE,AVGVOLUME,PERIOD} as y;
+'AAPL',22.40,'20.4M','2019-7-16T16:29:59 - 2019-7-31T16:29:59'
+```
+
+```python
+#!/usr/bin/spinlan
+
+from x_csv import x
+from y_csv import y
+exec(from=[x],to=[y]) as z
+print '''My optimized Spinlan code is ${z}'''
+```
+
+```
+len(x)-1 as _000_;
+abs(x[0].PRICE-x[_000_].PRICE) as y.RANGE;
+x[len].VOLUME as y.AVGVOLUME
+'''${x[0].CLOSE} - ${x[len].CLOSE}'''
+
+```
