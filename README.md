@@ -18,6 +18,14 @@ Spinlan, the declarative programming language
 ```python  
 #!/usr/bin/spinlan
 
+from records_csv import DRECORD
+print '''${DRECORD[0].STOCK_PRICE}'''
+
+```
+
+```python  
+#!/usr/bin/spinlan
+
 import records_csv as fn
 from fn import DRECORD
 print '''${DRECORD[0].STOCK_PRICE}'''
