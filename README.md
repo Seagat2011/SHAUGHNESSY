@@ -1,5 +1,5 @@
 # SPINLAN
-Spinlan is a shell-based declarative programming language 
+Spinlan is a general purpose declarative programming language 
 
 ## Example #1
 
