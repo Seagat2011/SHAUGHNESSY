@@ -3,25 +3,31 @@ Spinlan, the declarative programming language
 
 ## Example
 
-```code
-# records.csv
-'AAPL',202.59,'20.9M',16:29:59
+```python 
+# records_csv.h
 
+def __SCOPE__ {
+  fn as file('r');
+  DRECORD is str.split(',') as dict{SYMBOL,STOCK_PRICE,VOLUME,CLOSE} in fn.readlines()
+  SYMBOL is str;
+  STOCK_PRICE is int;
+  VOLUME is str;
+  CLOSE is int;
+}
+'AAPL',180.59,'20.9M','2019-7-16T16:29:59'
+'AAPL',189.49,'19.6M','2019-7-17T16:29:59'
+  .
+  .
+'AAPL',202.99,'21.3M','2019-7-31T16:29:59'
 ```
 
 
-```python 
+```python  
 #!/usr/bin/spinlan
 
 import fn
 import DRECORD from fn
 import STOCK_PRICE from DRECORD
 print '''${STOCK_PRICE}'''
-
-def __SCOPE__ {
-  fn is file('r') from 'records.csv'
-  DRECORD is str.split(',') as dict{SYMBOL,STOCK_PRICE,VOLUME,CLOSE} from fn.readlines()
-  STOCK_PRICE is str
-}
 
 ```
