@@ -26,7 +26,7 @@ def __SCOPE__ {
 #!/usr/bin/spinlan
 
 import fn
-import DRECORD from fn
+from fn import DRECORD
 print '''${DRECORD.STOCK_PRICE[0]}'''
 
 ```
