@@ -4,7 +4,7 @@ Spinlan, the declarative programming language
 ## Example
 
 ```python 
-# records_csv.h
+#records_csv.h
 
 def __SCOPE__ {
   fn as file('r');
