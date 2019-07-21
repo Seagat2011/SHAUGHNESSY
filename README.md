@@ -22,7 +22,7 @@ def __SCOPE__ {
 #!/usr/bin/spinlan
 
 from fn import DRECORD
-print '''${DRECORD.STOCK_PRICE[0]}'''
+print '''${DRECORD[0].STOCK_PRICE}'''
 
 ```
 
@@ -34,7 +34,7 @@ print '''${DRECORD.STOCK_PRICE[0]}'''
 def __SCOPE__ {
   fn as file('r');
 }
-#MyGrades is sorted(reverse=True) in [round(float,2) in fn.readlines()]
+#MyGrades is sorted(reverse=True) in [self]
 75.0
 80.5
 100.0
