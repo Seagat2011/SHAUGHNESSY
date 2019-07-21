@@ -92,5 +92,6 @@ len(x)-1 as _000_;
 abs(x[0].PRICE-x[_000_].PRICE) as y.RANGE;
 x[len].VOLUME as y.AVGVOLUME;
 '''${x[0].CLOSE} - ${x[len].CLOSE}''' as y.PERIOD;
-
 ```
+
+If Spinlan is unable to satisfy any test-cases, these test-cases may be submitted incrementally
