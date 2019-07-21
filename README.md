@@ -37,7 +37,7 @@ print '''${DRECORD[0].STOCK_PRICE}'''
 ```python
 #data_csv.h
 
-#MyGrades is sorted(reverse=True);
+#sorted(reverse=True) as MyGrades;
 75.0
 80.5
 100.0
