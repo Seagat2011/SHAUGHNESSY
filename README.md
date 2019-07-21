@@ -39,8 +39,8 @@ print '''${DRECORD.STOCK_PRICE[0]}'''
 def __SCOPE__ {
   fn as file('r');
   MyUnsortedGrades is list;
-  MyUnsortedGrades += [round(float,2) in fn.readlines()]
-  MyGrades is sorted(reverse=True) in MyUnsortedGrades
+  MyUnsortedGrades += [round(float,2) in fn.readlines()];
+  MyGrades is sorted(reverse=True) in MyUnsortedGrades;
 }
 75.0
 80.5
