@@ -8,7 +8,7 @@ Spinlan, the declarative programming language
 
 def __SCOPE__ {
   fn as file('r');
-  DRECORD is dict{SYMBOL,STOCK_PRICE,VOLUME,CLOSE} from str.split(',') in fn.readlines()
+  DRECORD is dict{SYMBOL,STOCK_PRICE,VOLUME,CLOSE} from str.split(',') in fn.readlines():
     SYMBOL is str;
     STOCK_PRICE is float(2);
     VOLUME is str;
@@ -27,6 +27,6 @@ def __SCOPE__ {
 
 import fn
 import DRECORD from fn
-print '''${DRECORD.STOCK_PRICE}'''
+print '''${DRECORD.STOCK_PRICE[0]}'''
 
 ```
