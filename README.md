@@ -6,7 +6,6 @@ Spinlan, the declarative programming language
 ```python 
 #records_csv.h
 
-#fn as file('r');
 #dict{SYMBOL,STOCK_PRICE,VOLUME,CLOSE} as DRECORD;
 'AAPL',180.59,'20.9M','2019-7-16T16:29:59'
 'AAPL',189.49,'19.6M','2019-7-17T16:29:59'
