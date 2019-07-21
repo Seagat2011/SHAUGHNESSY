@@ -81,13 +81,13 @@ Spinlan generates code which satisfies test-cases
 from x_csv import x
 from y_csv import y
 exec(from=[x],to=[y]) as z
-print '''My optimized Spinlan code is ${z}'''
+print '''${z}'''
 ```
 
 ```
 len(x)-1 as _000_;
 abs(x[0].PRICE-x[_000_].PRICE) as y.RANGE;
 x[len].VOLUME as y.AVGVOLUME;
-'''${x[0].CLOSE} - ${x[len].CLOSE}''' as y.PERIOD
+'''${x[0].CLOSE} - ${x[len].CLOSE}''' as y.PERIOD;
 
 ```
