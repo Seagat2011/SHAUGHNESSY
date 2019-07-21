@@ -9,10 +9,10 @@ Spinlan, the declarative programming language
 def __SCOPE__ {
   fn as file('r');
   DRECORD is dict{SYMBOL,STOCK_PRICE,VOLUME,CLOSE} from str.split(',') in fn.readlines()
-  SYMBOL is str;
-  STOCK_PRICE is float(2);
-  VOLUME is str;
-  CLOSE is int;
+    SYMBOL is str;
+    STOCK_PRICE is float(2);
+    VOLUME is str;
+    CLOSE is int;
 }
 'AAPL',180.59,'20.9M','2019-7-16T16:29:59'
 'AAPL',189.49,'19.6M','2019-7-17T16:29:59'
