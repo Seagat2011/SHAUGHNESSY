@@ -27,7 +27,6 @@ def __SCOPE__ {
 
 import fn
 import DRECORD from fn
-import STOCK_PRICE from DRECORD
-print '''${STOCK_PRICE}'''
+print '''${DRECORD.STOCK_PRICE}'''
 
 ```
