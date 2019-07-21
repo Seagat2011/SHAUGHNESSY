@@ -38,8 +38,9 @@ print '''${DRECORD.STOCK_PRICE[0]}'''
 
 def __SCOPE__ {
   fn as file('r');
-  MyUnsortedGrades is round(float,2) in fn.readlines(): 
-  MyGrades as sorted(reverse=True) from MyUnsortedGrades
+  MyUnsortedGrades is list;
+  MyUnsortedGrades += [round(float,2) in fn.readlines()]
+  MyGrades is sorted(reverse=True) in MyUnsortedGrades
 }
 75.0
 80.5
@@ -53,5 +54,5 @@ def __SCOPE__ {
 import fn
 
 from fn import MyGrades
-print '''$MyGrades[0]'''
+print '''My highest grade is $MyGrades[0]'''
 ```
