@@ -19,6 +19,7 @@ Spinlan, the declarative programming language
 ```python  
 #!/usr/bin/spinlan
 
+import records_csv as fn
 from fn import DRECORD
 print '''${DRECORD[0].STOCK_PRICE}'''
 
@@ -29,7 +30,6 @@ print '''${DRECORD[0].STOCK_PRICE}'''
 ```python
 #data_csv.h
 
-#fn as file('r');
 #MyGrades is sorted(reverse=True) in [self];
 75.0
 80.5
@@ -42,6 +42,7 @@ print '''${DRECORD[0].STOCK_PRICE}'''
 ```python
 #!/usr/bin/spinlan
 
+import data_csv as fn
 from fn import MyGrades
 print '''My highest grade is ${MyGrades[0]}'''
 ```
