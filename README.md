@@ -37,8 +37,7 @@ print '''${DRECORD[0].STOCK_PRICE}'''
 ```python
 #data_csv.h
 
-#list(round(float(2))) as MyUnsortedGrades
-#MyGrades is sorted(reverse=True) in MyUnsortedGrades;
+#MyGrades is sorted(reverse=True) in list(round(float(2)));
 75.0
 80.5
 100.0
