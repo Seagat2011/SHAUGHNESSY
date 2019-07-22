@@ -54,7 +54,7 @@ from data_csv import MyGrades
 print '''My highest grade is ${MyGrades[0]}'''
 ```
 
-Spinlan also generates code which satisfies provided test-cases
+Spinlan also generates code to satisfy test-cases
 
 ## Example 3
 
