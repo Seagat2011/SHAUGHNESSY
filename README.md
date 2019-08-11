@@ -94,4 +94,4 @@ x[len].VOLUME as y.AVGVOLUME;
 '''${x[0].CLOSE} - ${x[len].CLOSE}''' as y.PERIOD;
 ```
 
-If Spinlan is unable to satisfy test-cases, test-cases may be submitted incrementally
+If Shaughnessy is unable to satisfy test-cases, test-cases may be submitted incrementally
