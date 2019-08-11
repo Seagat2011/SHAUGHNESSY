@@ -96,4 +96,4 @@ each x.SYMBOL as y.SYMBOL;
 each ( x.PRICE / x.VOLUME ) as y.PRICE_TO_VOLUME
 ```
 
-If Shaughnessy is unable to satisfy test-cases, test-cases may be submitted incrementally
+When Shaughnessy is unable to satisfy test-cases, test-cases may be submitted incrementally
