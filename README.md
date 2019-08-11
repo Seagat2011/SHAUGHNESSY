@@ -54,7 +54,7 @@ from data_csv import MyGrades
 print '''My highest grade is ${MyGrades[0]}'''
 ```
 
-Shaughnessy also generates code to satisfy test-cases
+Shaughnessy also generates code intermediate from supplied test-cases
 
 ## Example 3
 
