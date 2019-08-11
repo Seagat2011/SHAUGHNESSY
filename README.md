@@ -90,10 +90,10 @@ print '''${z}'''
 ```
 
 ```
-dict{SYMBOL,RANGE,AVGVOLUME,PERIOD} as y;
-dict{} as x;
-y.SYMBOL as x.SYMBOL;
-each (y.PRICE / y.VOLUME) as x.PRICE_TO_VOLUME
+dict{SYMBOL,PRICE,VOLUME,PERIOD} as x;
+dict{SYMBOL,PRICE_TO_VOLUME} as y;
+x.SYMBOL as y.SYMBOL;
+each (x.PRICE / x.VOLUME) as y.PRICE_TO_VOLUME
 ```
 
 If Shaughnessy is unable to satisfy test-cases, test-cases may be submitted incrementally
