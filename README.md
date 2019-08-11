@@ -1,5 +1,5 @@
-# SPINLAN
-Spinlan is a general purpose declarative programming language 
+# SHAUGHNESSY 
+Shaughnessy is a general purpose declarative programming language 
 
 ## Example #1
 
@@ -15,7 +15,7 @@ Spinlan is a general purpose declarative programming language
 ```
 
 ```python  
-#!/usr/bin/spinlan
+#!/usr/bin/Shaughnessy
 
 from records_csv import DRECORD
 print '''${DRECORD[0].STOCK_PRICE}'''
@@ -25,7 +25,7 @@ print '''${DRECORD[0].STOCK_PRICE}'''
 Also 
 
 ```python  
-#!/usr/bin/spinlan
+#!/usr/bin/Shaughnessy
 
 import records_csv as fn
 from fn import DRECORD
@@ -48,13 +48,13 @@ print '''${DRECORD[0].STOCK_PRICE}'''
 ```
 
 ```python
-#!/usr/bin/spinlan
+#!/usr/bin/Shaughnessy
 
 from data_csv import MyGrades
 print '''My highest grade is ${MyGrades[0]}'''
 ```
 
-Spinlan also generates code to satisfy test-cases
+Shaughnessy also generates code to satisfy test-cases
 
 ## Example 3
 
@@ -77,7 +77,7 @@ Spinlan also generates code to satisfy test-cases
 ```
 
 ```python
-#!/usr/bin/spinlan
+#!/usr/bin/Shaughnessy
 
 from x_csv import x
 from y_csv import y
