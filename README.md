@@ -51,7 +51,7 @@ print '''${DRECORD[0].STOCK_PRICE}'''
 #!/usr/bin/Shaughnessy
 
 from data_csv import MyGrades
-print '''My highest grade is ${MyGrades[0]}'''
+print '''My top grade is ${MyGrades[0]}'''
 ```
 
 Shaughnessy also generates intermediate code from provided test-cases
@@ -72,8 +72,12 @@ Shaughnessy also generates intermediate code from provided test-cases
 ```python
 #y_csv.h
 
-#dict{SYMBOL,RANGE,AVGVOLUME,PERIOD} as y;
-'AAPL',22.40,'20.4M','2019-7-16T16:29:59 - 2019-7-31T16:29:59'
+#dict{SYMBOL,PRICE_TO_VOLUME} as y;
+'AAPL',9.0000E-6
+'AAPL',9.6429E-6
+ .
+ .
+'AAPL',9.6301E-6
 ```
 
 ```python
@@ -87,11 +91,9 @@ print '''${z}'''
 
 ```
 dict{SYMBOL,RANGE,AVGVOLUME,PERIOD} as y;
-x[0].SYMBOL as y.SYMBOL;
-len(x)-1 as _000_;
-abs(x[0].PRICE-x[_000_].PRICE) as y.RANGE;
-x[len].VOLUME as y.AVGVOLUME;
-'''${x[0].CLOSE} - ${x[len].CLOSE}''' as y.PERIOD;
+dict{} as x;
+y.SYMBOL as x.SYMBOL;
+each (y.PRICE / y.VOLUME) as x.PRICE_TO_VOLUME
 ```
 
 If Shaughnessy is unable to satisfy test-cases, test-cases may be submitted incrementally
