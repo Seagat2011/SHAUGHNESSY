@@ -92,8 +92,8 @@ print '''${z}'''
 ```
 dict{SYMBOL,PRICE,VOLUME,PERIOD} as x;
 dict{SYMBOL,PRICE_TO_VOLUME} as y;
-x.SYMBOL as y.SYMBOL;
-each (x.PRICE / x.VOLUME) as y.PRICE_TO_VOLUME
+each x.SYMBOL as y.SYMBOL;
+each ( x.PRICE / x.VOLUME ) as y.PRICE_TO_VOLUME
 ```
 
 If Shaughnessy is unable to satisfy test-cases, test-cases may be submitted incrementally
